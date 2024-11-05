@@ -1,0 +1,125 @@
+OOPs : 
+oops stands for object oriented programming language and object oriented programming system .
+
+combination of object and class 
+class :set of object 
+object :particular state and behavior 
+-----------------------------------------------------
+is java 100% pure object oritented programming or truely object oriented programming language : 
+ans :no 
+
+----------------------------------------------------
+what is truely | pure object oritented programming language ? 
+->it is work on class and object only (it used wrapper class ) it does not used primitive data type in java 
+
+----------------------------------------------------
+wrapper class : 
+->when primitive data type stored as class | object form this is known as wrapper class 
+
+primitive type          wrapper class 
+int                     Integer 
+float                   Float 
+boolean                 Boolean 
+long                    Long    
+double                  Double
+char                    Character 
+short                   Short 
+byte                    Byte 
+-----------------------------------------------------
+why java is not 100% pure and truely object oritented ?
+it is used primitive data type and collection is the part of java and collection topic always used wrapper in java 
+----------------------------------------------------------
+how to create a class ? 
+->used class keyword 
+
+class ClassName{
+
+}
+
+how create method : method only define and call
+method declaration not possible in java  
+class A {
+    void show() {
+        System.out.println("hello World");
+    }
+}
+
+public class Basic {
+    public static void main(String[] args) {
+        // class object
+        A p = new A();
+        p.show();
+    }
+}
+------------------------------------------
+methods :small block of code 
+methods are used to perform a specific task 
+
+types of method :
+predefine method :main() , print(), println() ,next(),nextLine() etc
+
+userdefine method :
+    no return and no argument 
+    no return and argument 
+    return and argument 
+    return and no argument 
+----------------------------------------------------
+function or method diffrence : 
+
+no return and no argument :
+method defination :
+return_type method_name(){
+
+}
+
+void show1(){
+
+}
+
+import java.util.*;
+
+class A {
+    // no return and no argument
+    void add() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a = sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c);
+    }
+}
+
+public class Basic2 {
+    public static void main(String[] args) {
+        A p = new A();
+        p.add();
+    }
+}
+---------------------------------------------------------------
+no return and argument : 
+
+syntax:
+return_type method_name(argument){
+
+}
+
+import java.util.*;
+
+class A {
+    void show(int a, int b) {
+        System.out.println(a + b);
+    }
+}
+
+public class Basic3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a and b ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        A l = new A();
+        l.show(a, b);
+    }
+}
